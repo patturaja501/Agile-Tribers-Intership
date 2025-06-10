@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Company Landing Page</title>
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --accent-color: #3498db;
+      --light-color: #f9f9f9;
+      --dark-color: #1a1a1a;
+      --text-color: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: var(--light-color);
+      color: var(--text-color);
+      height: 100vh;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+    }
+
+    header img {
+      height: 40px;
+      width: 40px;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 4px;
+      transition: color 0.3s;
+      
+    }
+    nav a:hover{
+      color: var(--accent-color);
+    }
+
+
+    main {
+      padding: 100px 20px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p.lead {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .column {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      flex: 1 1 300px;
+      text-align: left;
+    }
+
+    
+
+    .column img {
+      width: 32px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    .column h3 {
+      margin: 10px 0 5px;
+    }
+
+    footer {
+      background-color: var(--dark-color);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      font-size: 0.9rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .footer-contact a,
+    .footer-social a {
+      color: white;
+      text-decoration: none;
+      margin-right: 10px;
+      transition: color 0.3s;
+    }
+
+    .footer-contact a:hover,
+    .footer-social a:hover {
+      color: var(--accent-color);
+    }
+
+    @media (max-width: 768px) {
+      .columns {
+        flex-direction: column;
+      }
+
+      footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+      }
+
+      nav {
+        
+        justify-content: center;
+        flex-direction: row;
+        font-size: 10px;
+        gap: 0px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+ 
+  <header>
+    <img src="../tcs-removebg-preview (1).png" height="40px" width="40px" alt="Company Logo">
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <
+  <main>
+    <h1>Welcome to Our Company Web Site</h1>
+    <p class="lead">Empowering businesses with innovative solutions tailored to your success.</p>
+
+    <section class="columns">
+      <article class="column">
+        <h2>Services Offered</h2>
+        <ul style="list-style: none; padding: 0;">
+          
+                <li><b>*</b>IT and Software Development</li>
+
+                <li> <b>*</b>Cloud Computing Services</li>
+
+                <li><b>*</b>Business Process Outsourcing (BPO)</li>
+
+                <li><b>*</b>Technology and Digital Transformation Consulting</li>
+
+                <li><b>*</b>Artificial Intelligence and Machine Learning Solutions</li>
+        </ul>
+      </article>
+      <article class="column">
+        <h2>About Our Company</h2>
+        <p>
+          We are committed to helping businesses thrive by delivering cutting-edge solutions with integrity and precision.
+          Our values center around trust, innovation, and long-term success. We believe in building technology that serves people.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  
+  <footer>
+    <div class="footer-contact">
+      <a href="tel:+911234567890">+91 12345 67890</a> |
+      <a href="mailto:info@company.com">info@company.com</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a>
+    </div>
+  </footer>
+
+</body>
+</html>
