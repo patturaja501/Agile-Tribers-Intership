@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Task3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: darkgray;
+            display: flex;
+            justify-content: space-between;   
+            padding: 20px;          
+        }
+        .leftnav h3{
+            padding-left: 30px;
+        }
+        .leftnav{
+            color: white;
+        }
+        .rightnav a{
+             color: white;
+            padding-right: 30px;
+        }
+        
+         a{
+            text-decoration: none;
+            color: white;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 15px;
+            margin: 20px;
+            cursor: pointer;
+            transition: color 0.3s;  
+        }
+        a:hover{
+            color: lightblue;
+        }      
+
+        .main{
+            display: flex;
+            background-color: whitesmoke;
+        }
+        .right img{
+            width: 300px;
+            height: 200px;
+            margin: 50px;
+        }
+        .left{
+            margin: 50px;
+        }
+        .image,.maincontant{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 10px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .leftimage{
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+                  
+        }
+        .image1{
+            background-color: black;
+            width: 200px;
+            height: 200px;          
+        }
+        .contant{
+            width: 200px;
+            margin: 2px;
+        }
+        .main2{
+            display: flex;
+            flex-direction: column;
+        }
+        .contant p{
+            margin: 2px;
+        }
+        .btn{
+            background-color: orangered;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 2px;
+            margin-top: 20px;
+            cursor: pointer ;
+        }
+        footer{
+            background-color: darkgray;
+            color: white;
+            margin-top: 20px;
+        } 
+        .footer-content{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }    
+        .footer-section{
+            color: white;
+            width: 200px;
+            margin: 10px;
+            margin-left: 50px;
+            margin-right: 50px;
+            list-style: none;
+        }
+        .footer-section ul{
+            list-style: none;
+        }
+        .footer-section p{
+            font-size: 10px;
+        }
+        .footer-section h4 {
+            padding-bottom: 5px;
+        }
+        .footer{
+            background-color: white;
+            text-align: center;
+            color: black;
+            padding: 20px;
+        }
+        .img{
+            width: 20px;
+            height: 20px;
+
+        }
+        a{
+        display: inline-flex;
+        align-items: center;
+        margin: 0;
+        text-decoration: none;
+        
+}
+
+a img {
+        margin-right: 8px;
+        width: 24px;
+ 
+}
+                     
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="leftnav">
+            <h3 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Bloom</h3>
+        </div>
+        <div class="rightnav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="portfolio">Portfolio</a>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="left">  
+            <h2>lorem ipsum doler sit amet</h2>
+            <p>The model is built upon the Transformer architecture, which allows it to process and generate text efficiently by focusing on the relationships between words in a sentence. </p>
+            <p>The model is built upon the Transformer architecture, which allows it to process and generate text efficiently by focusing on the relationships between words in a sentence.</p> 
+            <button class="btn">Learn More</button> 
+        </div>
+        <div class="right">
+            <img src="../image/dogs.jfif" alt="image">
+        </div>
+    </div>
+    <h3 style="padding-left: 50px;">This is a handing</h3>
+    <div class="main2">
+    <div class="image">
+        <div class="image1">
+            <aside class="leftimage"></aside>
+        </div>
+        <div class="image1">
+            <aside class="centerimage"></aside>
+        </div>
+        <div class="image1">
+            <aside class="rightimage">  
+            </aside>
+        </div>
+        </div>
+        <div class="maincontant">
+        <div class="contant">
+        <h3>Aliquam et isaulis sapien</h3>
+        <p>The model is built upon the Transformer architecture.</p>
+        <button class="btn">Learn More</button>
+        </div>
+        <div class="contant">
+        <h3>Aliquam et isaulis sapien</h3>
+        <p>The model is built upon the Transformer architecture.</p>
+        <button class="btn">Learn More</button>
+        </div>
+        <div class="contant">
+        <h3>Aliquam et isaulis sapien</h3>
+        <p>The model is built upon the Transformer architecture.</p>
+        <button class="btn">Learn More</button>
+        </div>
+    </div>
+    </div>
+     <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Latest Posts</h4>
+        <ul>
+          <li><img src="../image/icons8-calendar-19-100.png" alt="icon" class="img"><span>Aliquam et iaculis sapien</li>
+          <p style="padding-left: 24px;">Vestibulum pulvinar tincidunt placerat</p></span>
+          </span>
+          <li><img src="../image/icons8-calendar-19-100.png" alt="icon" class="img">Aliquam et iaculis sapien</li>
+          <p style="padding-left: 24px;">Vestibulum pulvinar tincidunt placerat</p>
+          <li><img src="../image/icons8-calendar-19-100.png" alt="icon" class="img"> Aliquam et iaculis sapien</li>
+          <p style="padding-left: 24px;">Vestibulum pulvinar tincidunt placerat</p>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>About</h4>
+        <p>Vestibulum pulvinar tincidunt placerat. Nulla porta porttitor sem, a ultrices magna feugiat quis. Nam ac diam ac libero posuere lacinia eget et libero.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Stay Connected</h4>
+        <ul>
+          <li><a href="#"><img src="../image/facebook icon.png" alt="icon" class="img"><span>Facebook</span></a></li>
+          <li><a href="#"><img src="../image/icons8-twitter-100.png" alt="icon" class="img">Twitter</a></li>
+          <li><a href="#"><img src="../image/icons8-rss-100.png" alt="icon" class="img">RSS</a></li>
+          <li><a href="#"><img src="../image/icons8-google-100.png" alt="icon" class="icon">Google+</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <footer class="footer">
+    <h6>Copyright 2011 All right in bloom web Design</h6>
+  </footer>
+
+</body>
+</html>
