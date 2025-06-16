@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox task 4</title>
+    <style>
+       
+         *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+
+        .maindiv{
+            position: absolute;
+            top: 10px;
+            margin: 10px;
+            width: 90%;
+            height: 220px;
+            display: flex;
+            border-radius: 10px; 
+            overflow: hidden;  
+            border-bottom:solid 3px lightgray; 
+            border-right: solid 3px  lightgray;
+        }
+        .leftmaindiv{
+            width: 90%;
+        }
+        .img img{
+            height: 220px;
+            width: 600px;
+           
+        }
+        .leftnav{
+            position: absolute;
+            top: 0;
+            background-color: darkcyan;
+            width: 600px;
+            opacity: 0.5;
+            color: white;
+        }
+        .leftnav h2,h6{
+            margin-left: 60px;
+        }
+        .navline{
+            display: flex;
+            flex-direction: row;
+            width: 600px;
+            position: absolute;
+            top: 43px;
+        }
+        .line h3,h6{
+            margin-left: 60px;
+            margin-right: 50px;
+            
+        }
+        .line h3{
+            font-size: 10px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .line h6{
+            opacity: 0.5;
+            font-size: 8px;
+        }
+        .borcode img{
+            transform: translate(-50%, -50%) rotate(-90deg);
+            position: absolute;
+            top:100px;
+            margin-left: 30px;
+            width: 145px;
+            height: auto;
+        }
+        .maincontant1{
+            display: flex;
+            flex-direction: row;
+            width: 600px;
+            position: absolute;
+            justify-content: center;
+            top: 80px;
+            gap: 30px;
+            margin: 10px;
+            margin-right: 60px; 
+        }
+        .maincontant1 h1{
+            font-size: 40px;
+            font-family:'Times New Roman', Times, serif;
+           
+        }
+        .maincontant1 img{
+            width: 40px;
+            height: 40px;
+            margin-top: 9px;
+        }
+        .lastcontant{
+           display: flex;
+           position: absolute;
+           top: 165px;
+        }
+        .last h3{
+            margin-left: 60px;
+            font-size: 15px;
+        }
+        .last h6{
+            color: red;
+        }
+        .rightnav{
+            display: flex;
+            gap: 10px;
+            background-color: blue;
+            padding: 5px;
+        }
+        .rightnav h1{
+            font-size: 20px;
+            font-family:'Times New Roman', Times, serif;
+           
+        }
+        .rightmaindiv{
+            width: 90%;
+        }
+        .rightnav img{
+            width: 20px;
+            height: 20px;
+            margin-top: 6px;
+        }
+        .line1 h6{
+            margin-left: 10px;
+            font-size: 10px;
+            opacity: 0.5;
+            margin: 5px;
+        }
+        .line1 h3{
+            font-size: 15px;
+            margin-top: 3px;
+            margin-left: 2px;
+            
+        }
+        .maincontant3{
+            margin-top: 2px;
+        }
+        .line2{
+            display: flex;
+            margin-top: 3px;
+            gap: 10px;
+        }
+        .borcode1 {
+            height: 100px;
+            color: black;
+            width: 200px;
+            top: 0;
+        }
+
+        .borcode1 > img{
+          
+            position: absolute;
+            top:115px;
+            width: 200px;
+            height: auto;
+        }
+        
+          
+        
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="leftmaindiv">
+          <div class="img"> 
+            <img src="../flex boxtask 4/image/vector-de-ilustracao-de-fundo-cinza-de-conexao-mundial.png" alt="">
+            </div>
+            <nav class="leftnav">
+                <h2>BOARDING PASS</h2>
+                <h6>AIRLINE COMPANY</h6>
+            </nav>
+            <div class="borcode">
+                <img src="../flex boxtask 4/image/9185914.png" alt="barcode">
+            </div>
+            <div class="maincontant">
+                <div class="nav">
+                  <div class="navline">
+                  <div class="line">
+                  <h6>PASSING</h6>
+                  <h3>JOHN DOE</h3>
+                </div>
+                <div class="line">
+                  <h6>FLIGHT</h6>
+                  <h3>AV 1A7</h3>
+                </div>
+                <div class="line">
+                  <h6>DATE</h6>
+                  <h3>27 JUN 2025</h3>
+                </div>
+                <div class="line">
+                  <h6>SEAT</h6>
+                  <h3>4B</h3>
+                </div>
+              </div>
+            </div>
+            <div class="maincontant1">
+                    <div class="flight1">
+                     <h1>LONDON</h1>
+                    </div>
+                    <div class="flight1">
+                     <img src="../flex boxtask 4/image/icons8-plane-100.png" alt="plane">
+                    </div>
+                    <div class="flight1">
+                     <h1>TOKYO</h1>
+                    </div>
+             </div> 
+            <div class="lastcontant">
+                    
+                    <div class="last">
+                        <h6>GATE</h6>
+                        <h3>25 A</h3>
+                    </div>
+                    <div class="last">
+                        <h6>BOARDING TIME</h6>
+                        <h3>6:30</h3>
+                    </div>
+            </div>
+            </div>
+        </div>
+        <div class="rightmaindiv">
+            <nav class="rightnav">
+                <div class="flight">
+                    <h1>LONDON</h1>
+                    </div>
+                    <div class="flight">
+                    <img src="../flex boxtask 4/image/icons8-plane-100.png" alt="plane">
+                    </div>
+                    <div class="flight">
+                    <h1>TOKYO</h1>
+                    </div>
+            </nav>
+            <div class="maincontant3">
+
+               <div class="line1">
+                  <h6>PASSING</h6>
+                  <h3>JOHN DOE</h3>
+                </div>
+
+                <div class="line2">
+                <div class="line1">
+                  <h6>FLIGHT</h6>
+                  <h3>AV 1A7</h3>
+                </div>   
+                <div class="line1">
+                  <h6>SEAT</h6>
+                  <h3>4B</h3>
+                </div>
+                </div>
+
+                <div class="line1">
+                  <h6>DATE</h6>
+                  <h3>27 JUN 2025</h3>
+                </div>   
+            <div class="borcode1">
+                <img src="./image/9185914.png" alt="barcode">
+            </div>
+        </div>
+    </div>
+ </div>
+</body>
+</html>
