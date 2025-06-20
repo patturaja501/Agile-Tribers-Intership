@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS TASK 2</title>
+</head>
+<body>
+    <h2>Task  1</h2>
+    <form id="input">
+        <h3>Color</h3>
+       <label><input type="radio" name="color" value="red">RED</label> <br><br>
+       <label><input type="radio" name="color" value="blue">BLUE</label> <br><br>
+       <label><input type="radio" name="color" value="green">GREEN</label> <br><br>
+    </form>
+    <form id="input1">
+        <h3>Hobbies</h3>
+       <label><input type="checkbox" name="hobbies" value="Coding">Coding</label> <br><br>
+       <label><input type="checkbox" name="hobbies" value="Sports">Sports</label> <br><br>
+       <label><input type="checkbox" name="hobbies" value="gaming">gaming</label> <br><br>
+    </form><br><br>
+    <button id="btn">Submit</button>
+    <h3 id="radio"></h3>
+    <script>
+        const btn=document.getElementById('btn');
+        btn.addEventListener('click', function(){
+            const color=document.querySelector('input[name="color"]:checked');
+            const sel=color ? color.value: None;
+            const hobby=document.querySelectorAll('input[name="hobbies"]:checked');
+            const hobbies=Array.from(hobby).map(cb =>cb.value);
+            document.getElementById('radio').innerHTML=`Color: ${sel}<br>Hobbies: ${hobbies.join(' , ') || 'None'}`;
+        });
+    </script>
+</body>
+</html>
