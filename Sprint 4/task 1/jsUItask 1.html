@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 1</title>
+</head>
+<body>
+    <h2>Task 1</h2>
+    
+    <button onclick="sayhello()">Click the button</button>
+    <script>
+       function sayhello() {
+        console.log("Button Click");
+       }
+    </script>
+    <h2>Task 2</h2>
+    <button onclick="sum()">Click Me</button>
+    <script>
+        function sum(){
+            let a=10;
+            let b=20;
+            console.log("sum:",a+b);
+        }
+    </script>
+    <h2>Task 3</h2>
+    <input type="text" id="userinput">
+    <button onclick="a()">Sumbit</button>
+    <script>
+        function a(){
+            let user=document.getElementById('userinput').value;
+            console.log(user)
+        }
+    </script>
+    <h2>Task 4</h2>
+    <input type="text" id="user">
+    <button onclick="a()">Sumbit</button>
+    <p id="msg"></p>
+    <script>
+        function a(){
+            let user=document.getElementById('user').value;
+            document.getElementById('msg').textContent=user
+        }
+    </script>
+    <h2>Task 5</h2>
+    <input type="text" id="userinput1" onchange="b()">
+    <h1 id="c"></h1>
+    <script>
+        function b(){
+            let b=document.getElementById('userinput1').value;
+            document.getElementById('c').textContent="InputChanged:"+b;
+        }
+    </script>
+    <h2>Task 6</h2>
+    <button ondblclick="c()" id="btn">Double Click</button>
+   <h2 id="h2"></h2>
+    <script>
+        function c(){
+           document.getElementById('h2').textContent= 'Button was double-clicked';
+        }
+    </script>
+    <h2>Task 7</h2>
+    <div onmouseenter="pattu()" onmouseleave="raja()"> hi friends</div>
+    <h2 id="king"></h2>
+    <script>
+        function pattu(){
+            document.getElementById('king').textContent='Mouse is Enter';
+        }
+        function raja(){
+            document.getElementById('king').textContent='Mouse is Leave';
+        }
+    </script>
+    <h2>Task 8</h2>
+    <input type="text" id="inbox">
+    <h2 id="k"></h2>
+    <script>
+        let input=document.getElementById('inbox');
+        input.addEventListener('keydown',function(){
+            document.getElementById('k').textContent='Key pressed!';
+        });
+        let i=document.getElementById('inbox');
+        i.addEventListener('keyup',function(){
+            document.getElementById('k').textContent='Key released!';
+        });
+    </script>
+</body>
+</html>
