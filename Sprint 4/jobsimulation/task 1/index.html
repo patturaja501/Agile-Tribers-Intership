@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+  <style>
+    body { 
+      font-family: Arial;
+      padding: 20px;
+      justify-content: center;
+      display: flex;
+    }
+    .userform{
+      justify-items: center;
+      padding: 30px;
+      border: 2px solid gray;
+      border-radius: 3px;
+
+    }
+    .error { 
+      color: red; 
+      font-size: 14px; }
+    input { 
+       display: block;
+       margin-bottom: 10px; 
+       padding: 10px; 
+     
+    
+    }
+    button{
+      padding: 5px;
+      margin-left: 40px;
+      margin-top: 10px;
+      width: 100px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<div class="userform">
+  <h2>User Registration Form</h2>
+  <form id="userForm">
+    
+    <label>Name:</label>
+    <span id="nameError" class="error"></span>
+    <input type="text" id="name" />
+    
+    <label>Age:</label>
+     <span id="ageError" class="error"></span>
+    <input type="text" id="age" />
+   
+    <button  id="submit">Submit</button>
+  </form>
+
+  <script src="index.js"></script>
+  </div>
+</body>
+</html>
