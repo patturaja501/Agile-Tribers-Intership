@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="app">
+        <div class="div">
+        <div class="container">
+        <h1 style="color: aqua; text-align: center;">StudentList</h1>
+        <div class="reload" id="reload">
+        <img src="./img/reload.png" alt="reload">
+        </div>
+        </div>
+        <div class="box">
+            <div class="maindiv">
+            <div class="input" >
+                <input type="text"id="name" class="inputbox" placeholder="Enter StudentName">
+                <button id="submit" class="btn">Add Student</button>
+            </div>
+            <div class="search">
+                <input type="text" id="search" class="search1" placeholder="Search Student">
+            </div>
+        </div>
+        </div>
+        <div class="list-container">
+            <ul id="StudentList" class="display"></ul>
+        </div>
+        <div class="total-students" id="total"></div>
+        
+        </div>
+        </div>
+        <script src="./js.js"></script>
+</body>
+</html>
